@@ -1,0 +1,151 @@
+   @font-face {
+       font-family:Raleway ;
+       src: url("../fonts/Raleway-Regular.ttf") format("truetype");
+   }
+   
+   
+   #nav{
+       margin: 10px;
+       padding: 20px;;
+}
+   #nav li{
+       display: inline;
+       padding: 0;
+       margin: 0;
+   }
+   header{
+       display: flex;
+       justify-content: space-between;
+}
+   
+   header nav {
+    align-self: center;
+}
+    header a {
+        text-decoration: none;
+        padding: 32px;
+        color:black
+}
+    header a:hover {
+        color: #0065fc;
+        border-top: 2px solid #0065fc ;
+}
+    #register{
+        color:#0065fc;
+        font-weight: bold;
+}
+    #register:hover{
+        border: none;
+        text-decoration: overline;
+}
+    
+    form.recherche .btnLocalization {
+        background: gainsboro;
+        padding-bottom: 10px;
+        padding-top: 7px;
+        border-radius: 15px 0 0 15px ;
+        font-size: 20px;
+        padding: 5px 15px;
+        border: 1px gainsboro solid;
+    }
+    
+     form.recherche button[type="submit"]{
+        color: white;
+        border-radius: 0 15px 15px 0;
+        border: 1px #0065FC solid;
+        background:#0065FC;
+        display: flex;
+        height: 43px;
+        padding:0px  15px;
+    }
+    
+    form.recherche{
+        display: flex;
+        text-align: initial;
+    }
+    
+    form.recherche input{
+        background:white;
+        height: 20px;
+        padding: 11px 5vw;
+        border: 1px gainsboro solid;
+        margin-left: -4px;
+    }
+    
+    .filtres {
+        flex-direction: column;
+        display: flex;
+        padding: 20px 0;
+    }
+    
+    
+    .filtres,
+    .filtres.content {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+    }
+    
+    .filtres-titre {
+        
+        padding-top: inherit;
+        padding-right: 20px;
+        font-weight: bold;
+    }
+    
+    .filtres .bouton-filtre {
+        display: flex;
+        justify-content: space-between;
+        border-radius: 200px;
+        border: 2px #F2F2F2 solid;
+        height: 50px;
+        position: relative;
+        padding-left: 55px;
+        padding-right: 14px;
+        margin-right: 20px;
+        transition: transform .2s;
+        cursor: pointer;
+    }
+    
+    .filtres .bouton-filtre i {
+        line-height: 50px;
+        color: #0065FC;
+        position: absolute;
+        width: 50px;
+        text-align: center;
+        background: #DEEBFF;
+        left: -2px;
+        border-radius: 100%;
+    }
+    
+    .bouton-filtre p {
+        margin: auto;
+        font-weight: bold;
+    }
+    
+    .nombrelogementstxt {
+        padding: 0 20px 0;
+        display: inline-flex;
+    }
+    
+    .nombrelogementstxt i {
+        border: 2px solid #F2F2F2;
+        width: 29px;
+        line-height: 25px;
+        font-size: 14px;
+        color: #0065FC;
+        text-align: center;
+        border-radius: 100%;
+        margin-right: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 29px;
+    }
+    
+    p.NbLogements {
+        margin: auto;
+        padding-left: 3px;
+    }
+    
+    
