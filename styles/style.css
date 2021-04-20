@@ -1,9 +1,11 @@
    @font-face {
-       font-family:Raleway ;
-       src: url("../fonts/Raleway-Regular.ttf") format("truetype");
-   }
-   
-   
+       font-family: "Raleway" ;
+       src: url("../fonts/font-awesome/Raleway-Regular.ttf") format("truetype");
+    }
+   body {
+   font-family: "Raleway" ,sans-serif;
+}
+
    #nav{
        margin: 10px;
        padding: 20px;;
@@ -86,11 +88,13 @@
         align-items: center;
     }
     
-    .filtres-titre {
+    .titre-filtre {
         
         padding-top: inherit;
         padding-right: 20px;
         font-weight: bold;
+        font-size: large;
+        justify-content: center;
     }
     
     .filtres .bouton-filtre {
@@ -121,14 +125,17 @@
     .bouton-filtre p {
         margin: auto;
         font-weight: bold;
+        
     }
     
-    .nombrelogementstxt {
+    .nombrelogementsdispo {
+        
         padding: 0 20px 0;
         display: inline-flex;
     }
     
-    .nombrelogementstxt i {
+    .nombrelogementsdispo i {
+        
         border: 2px solid #F2F2F2;
         width: 29px;
         line-height: 25px;
@@ -144,8 +151,293 @@
     }
     
     p.NbLogements {
+        
         margin: auto;
         padding-left: 3px;
+}
+
+ /* hebergemennts */
+
+ 
+
+ 
+
+figure:hover {
+    transform: scale(1.02);
+}
+
+.item:hover {
+    transform: scale(1.02);
+}
+
+.hébergements.container {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#hébergement .hébergementsproposés {
+    order: 1;
+    flex: 1;
+    margin-right: 4%;
+}
+
+
+
+#hébergement .LesPlusPopulaires {
+    order: 2;
+    flex: 0 1 37%;
+}
+
+
+
+
+#hébergement .fondgris {
+    background: #F2F2F2;
+    border-radius: 20px;
+    padding: 30px 25px;
+    min-height: 580px;
+    margin-bottom: 20px;
+}
+
+
+
+#hébergement .fondgris .group-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-radius: 20px;
+}
+
+
+
+#hébergement .fondgris .group-item figure {
+    width: calc(100% / 3.3);
+    background: #FFF;
+    padding: 0.3rem;
+    border-radius: 1.25rem;
+    margin: 0 0 30px 0;
+    box-shadow: 0px 0px 10px #55555535;
+    cursor: pointer;
+    transition: transform .2s;
+}
+
+
+
+#hébergement .fondgris .group-item figure figcaption {
+    padding: 10px;
+    position: relative;
+}
+
+#hébergement .fondgris .group-item figure figcaption p {
+    margin: 0;
+}
+
+#hébergement .fondgris .group-item figure figcaption p:first-child {
+    font-size: 14px;
+}
+
+#hébergement .fondgris .group-item figure figcaption p:nth-child(2) {
+    font-size: 12px;
+    margin: 5px 0;
+}
+
+#hébergement .fondgris .group-item figure figcaption i {
+    color: #0065FC;
+    font-size: 12px;
+}
+
+#hébergement .fondgris .group-item figure img {
+    height: 7rem;
+    object-fit: cover;
+    max-width: 100%;
+    width: 100%;
+    max-height: 100%;
+    border-radius: 1rem 1rem 0 0;
+}
+
+#hébergement .LesPlusPopulaires .group-item {
+    flex-direction: column;
+}
+
+#hébergement .LesPlusPopulaires .group-item figure {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+#hébergement .LesPlusPopulaires .group-item figure img {
+    max-width: 100px;
+    max-height: initial;
+    height: 115px;
+    border-radius: 20px 0 0 20px;
+}
+
+#hébergement h2,
+#hébergement .stonk {
+    display: flex;
+    justify-content: space-between;
+}
+
+#hébergement h1 i {
+    margin: auto 0;
+    
+}
+.LesPlusPopulaires .étoilesnote {
+    position: absolute;
+    bottom: 5%;
+}
+
+* Activités à Marseille */
+
+.txtActiviteVille {
+    padding: 0px 0px 0px 20px;
+}
+
+.txtActivite {
+    padding: 0px 0px 0px 20px;
+}
+
+.activiteContainer .fondgris h1 {
+    margin-left: 25px;
+}
+
+.activiteContainer .flex-container {
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 15px 15px;
+}
+
+#ActiviteAMarseille {
+    width: 70%;
+    margin-right: 25px;
+}
+
+#ActiviteAMarseille .fondgris {
+    width: 35%;
+}
+
+#ActiviteAMarseille {
+    display: flex
+}
+
+#activites ul {
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#activites ul li {
+    padding: 3px;
+    background: #FFF;
+    border-radius: 20px;
+    margin: 0 0 30px 0;
+    -webkit-box-shadow: 0 5px 40px -20px rgba(0, 0, 0, .75);
+    -moz-box-shadow: 0 5px 40px -20px rgba(0, 0, 0, .75);
+    box-shadow: 0 5px 40px -20px rgba(0, 0, 0, .75);
+}
+
+#activites ul li img {
+    height: 100%;
+    max-height: 100px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+
+    #activites .group-item {
+        width: 50%;
+        display: flex;
     }
-    
-    
+    #activites .group-item .columndouble,
+    #activites .group-item .column {
+        max-width: 45%;
+        min-width: 45%;
+        margin: auto;
+    }
+    #activites .group-item .column,
+    #activites .group-item .column .item {
+        height: 100%;
+    }
+    #activites .group-item .column .item .activiteimg,
+    #activites .group-item .column .item .activiteimg img {
+        height: 80%;
+        max-height: initial;
+        height: 92%;
+        margin-bottom: -9%;
+    }
+}
+
+#activites .group-item .column {
+    display: flex;
+    flex-direction: column;
+    order: 1;
+    flex: 1;
+}
+
+#activites .group-item .columndouble {
+    display: flex;
+    flex-direction: column;
+    order: 2;
+    flex: 0 1 35%;
+}
+
+#activites .group-item .item {
+    width: 100%;
+    background: #FFF;
+    border-radius: 20px;
+    margin: 0 0 30px 0;
+    -webkit-box-shadow: 0 5px 40px -20px rgba(0, 0, 0, .75);
+    -moz-box-shadow: 0 5px 40px -20px rgba(0, 0, 0, .75);
+    box-shadow: 0 5px 40px -20px rgba(0, 0, 0, .75);
+    cursor: pointer;
+    transition: transform .2s;
+}
+
+#activites .group-item .item:hover {
+    transform: scale(1.05);
+}
+
+#activites .group-item .item img {
+    height: 100%;
+    max-height: 100px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+
+/* footer */
+
+footer {
+    background-color: #F2F2F2;
+    bottom: 0;
+    border-top: 0;
+    position: inherit;
+    justify-content: space-around;
+    display: flex;
+}
+
+
+
+.bloc-footer {
+    padding: 20px;
+    width: 100%;
+    padding-left: 10%;
+}
+
+ul.liste {
+    color: #464646;
+    padding: 0;
+    line-height: 2rem;
+}
+
+#footer .bloc-footer .liste {
+    flex-shrink: 1;
+    list-style: none;
+}
+
+#footer a li {
+    text-decoration: none;
+    color: black;
