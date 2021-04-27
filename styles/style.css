@@ -32,19 +32,19 @@ header nav {
      color:black
 }
     header a:hover {
-        color: #0065fc;
-        border-top: 2px solid #0065fc ;
+    color: #0065fc;
+    border-top: 2px solid #0065fc ;
 }
     #register{
-        color:#0065fc;
-        font-weight: bold;
+    color:#0065fc;
+    font-weight: bold;
 }
     #register:hover{
-        border: none;
-        text-decoration: underline;
+     border: none;
+    text-decoration: underline;
 }
 #nav{
-    display: flex;
+  display: flex;
 }
 header nav li:nth-child(1){
     order: 1;
@@ -55,24 +55,24 @@ header nav li :nth-child(2){
 header nav li : :nth-child(3){
     order:3
 }
-    form.recherche .btnLocalization {
-        background: gainsboro;
-        padding-bottom: 10px;
-        padding-top: 7px;
-        border-radius: 15px 0 0 15px ;
-        font-size: 20px;
-        padding: 5px 15px;
-        border: 1px gainsboro solid;
+form.recherche .btnLocalization {
+    background: gainsboro;
+    padding-bottom: 10px;
+    padding-top: 7px;
+    border-radius: 15px 0 0 15px ;
+    font-size: 20px;
+    padding: 5px 15px;
+    border: 1px gainsboro solid;
     }
     
      form.recherche button[type="submit"]{
-        color: white;
-        border-radius: 0 15px 15px 0;
-        border: 1px #0065FC solid;
-        background:#0065FC;
-        display: flex;
-        height: 43px;
-        padding:0px  15px;
+    color: white;
+    border-radius: 0 15px 15px 0;
+    border: 1px #0065FC solid;
+    background:#0065FC;
+    display: flex;
+    height: 43px;
+    padding:0px  15px;
     }
     
 form.recherche{
@@ -89,71 +89,69 @@ margin-left: -4px;
 }
     
 .filtres-container {
-    padding: 20px 0 ;
-    align-items: center;
-    display: flex;
+padding: 20px 0 ;
+align-items: center;
+display: flex;
+}
+.titre-filtre {
+padding-top: inherit;
+padding-right: 20px;
+font-weight: bold;
+font-size: large;
+justify-content: center;
 }
     
-    .titre-filtre {
+.filtres .bouton-filtre {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 200px;
+    border: 2px #F2F2F2 solid;
+    height: 50px;
+    position: relative;
+    padding-left: 55px;
+     padding-right: 14px;
+     margin-right: 20px;
+     transition: transform .2s;
+    cursor: pointer;
+}
+    
+ .filtres .bouton-filtre i {
+    line-height: 50px;
+    color: #0065FC;
+    position: absolute;
+    width: 50px;
+    text-align: center;
+    background: #DEEBFF;
+    left: -2px;
+     border-radius: 100%;
+}
+    
+.bouton-filtre p {
+    margin: auto;
+    font-weight: bold;
         
-        padding-top: inherit;
-        padding-right: 20px;
-        font-weight: bold;
-        font-size: large;
-        justify-content: center;
-    }
+}
     
-    .filtres .bouton-filtre {
-        display: flex;
-        justify-content: space-between;
-        border-radius: 200px;
-        border: 2px #F2F2F2 solid;
-        height: 50px;
-        position: relative;
-        padding-left: 55px;
-        padding-right: 14px;
-        margin-right: 20px;
-        transition: transform .2s;
-        cursor: pointer;
-    }
+.nombrelogementsdispo {
+    padding: 0 0 20px 0;
+    display: inline-flex;
+}
     
-    .filtres .bouton-filtre i {
-        line-height: 50px;
-        color: #0065FC;
-        position: absolute;
-        width: 50px;
-        text-align: center;
-        background: #DEEBFF;
-        left: -2px;
-        border-radius: 100%;
-    }
-    
-    .bouton-filtre p {
-        margin: auto;
-        font-weight: bold;
+.nombrelogementsdispo i {
         
-    }
-    
-    .nombrelogementsdispo {
-        padding: 0 0 20px 0;
-        display: inline-flex;
-    }
-    
-    .nombrelogementsdispo i {
-        
-        border: 2px solid #F2F2F2;
-        width: 29px;
-        line-height: 25px;
-        font-size: 14px;
-        color: #0065FC;
-        text-align: center;
-        border-radius: 100%;
-        margin-right: 5px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 29px;
-    }
+    border: 2px solid #F2F2F2;
+    width: 29px;
+     line-height: 25px;
+     font-size: 14px;
+    color: #0065FC;
+    text-align: center;
+     border-radius: 100%;
+     margin-right: 5px;
+     display: flex;
+     justify-content: center;
+    align-items: center;
+    height: 29px;
+}
     
     p.NbLogements {
         
@@ -355,35 +353,35 @@ figure:hover {
 }
 
 
-    #activites .group-item {
-        width: 50%;
-        display: flex;
+#activites .group-item {
+    width: 50%;
+    display: flex;
     }
-    #activites .group-item .columndouble,
-    #activites .group-item .column {
-        max-width: 45%;
-        min-width: 45%;
-        margin: auto;
+#activites .group-item .columndouble,
+#activites .group-item .column {
+     max-width: 45%;
+    min-width: 45%;
+    margin: auto;
     }
-    #activites .group-item .column,
-    #activites .group-item .column .item {
-        height: 100%;
+#activites .group-item .column,
+#activites .group-item .column .item {
+    height: 100%;
         
-    }
-    #activites .group-item .column .item .activiteimg,
-    #activites .group-item .column .item .activiteimg img {
-        width: 100%;
-        max-height: initial;
-        height: 90%;
-        margin-bottom: -9%;
+}
+#activites .group-item .column .item .activiteimg,
+#activites .group-item .column .item .activiteimg img {
+    width: 100%;
+    max-height: initial;
+     height: 90%;
+     margin-bottom: -9%;
         
-    }
+}
 
 #activites .group-item .column {
-    display: flex;
-    flex-direction: column;
-    order: 1;
-    flex: 1;
+display: flex;
+flex-direction: column;
+order: 1;
+flex: 1;
    
 }
 

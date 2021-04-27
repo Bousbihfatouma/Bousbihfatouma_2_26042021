@@ -2,10 +2,9 @@
   "editor.formatOnSave": true,
   "[javascript]": {
     "editor.formatOnSave": false
-  },
-  "editor.codeActionsOnSave": {
-    "source.fixAll": true
- }
 }
+
+
+
  
  
