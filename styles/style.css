@@ -1,32 +1,35 @@
-   @font-face {
-       font-family: "Raleway" ;
-       src: url("../fonts/font-awesome/Raleway-Regular.ttf") format("truetype");
-    }
-   body {
-   font-family: "Raleway" ,sans-serif;
+@font-face {
+    font-family: "Raleway" ;
+    src: url("../fonts/font-awesome/Raleway-Regular.ttf") format("truetype");
 }
 
-   #nav{
-       margin: 10px;
-       padding: 20px;;
+ body {
+    font-family: "Raleway" ,sans-serif;
+    padding: 0 32px;
+    margin: 0;
 }
-   #nav li{
-       display: inline;
-       padding: 0;
-       margin: 0;
-   }
-   header{
-       display: flex;
-       justify-content: space-between;
+
+#nav{
+    margin: 10px;
+    padding: 20px;;
+}
+#nav li{
+    display: inline;
+    padding: 0;
+    margin: 0;
+}
+header{
+    display: flex;
+    justify-content: space-between;
 }
    
-   header nav {
+header nav {
     align-self: center;
 }
-    header a {
-        text-decoration: none;
-        padding: 32px;
-        color:black
+ header a {
+     text-decoration: none;
+     padding: 28px;
+     color:black
 }
     header a:hover {
         color: #0065fc;
@@ -38,9 +41,20 @@
 }
     #register:hover{
         border: none;
-        text-decoration: overline;
+        text-decoration: underline;
 }
-    
+#nav{
+    display: flex;
+}
+header nav li:nth-child(1){
+    order: 1;
+}
+header nav li :nth-child(2){
+    order: 2;
+}
+header nav li : :nth-child(3){
+    order:3
+}
     form.recherche .btnLocalization {
         background: gainsboro;
         padding-bottom: 10px;
@@ -61,32 +75,24 @@
         padding:0px  15px;
     }
     
-    form.recherche{
-        display: flex;
-        text-align: initial;
-    }
+form.recherche{
+ display: flex;
+ text-align: initial;
+ }
     
-    form.recherche input{
-        background:white;
-        height: 20px;
-        padding: 11px 5vw;
-        border: 1px gainsboro solid;
-        margin-left: -4px;
-    }
+form.recherche input{
+ background:white;
+height: 20px;
+padding: 11px;
+border: 1px gainsboro solid;
+margin-left: -4px;
+}
     
-    .filtres {
-        flex-direction: column;
-        display: flex;
-        padding: 20px 0;
-    }
-    
-    
-    .filtres,
-    .filtres.content {
-        display: flex;
-        flex-flow: row wrap;
-        align-items: center;
-    }
+.filtres-container {
+    padding: 20px 0 ;
+    align-items: center;
+    display: flex;
+}
     
     .titre-filtre {
         
@@ -129,8 +135,7 @@
     }
     
     .nombrelogementsdispo {
-        
-        padding: 0 20px 0;
+        padding: 0 0 20px 0;
         display: inline-flex;
     }
     
@@ -158,7 +163,10 @@
 
  /* hebergemennts */
 
- 
+ h2{
+     font-size: 24px;
+     padding : 0 32px;
+ }
 
  
 
@@ -195,7 +203,7 @@ figure:hover {
     background: #F2F2F2;
     border-radius: 20px;
     padding: 30px 25px;
-    min-height: 580px;
+    min-height: 700px;
     margin-bottom: 20px;
 }
 
@@ -268,7 +276,7 @@ figure:hover {
 #hébergement .LesPlusPopulaires .group-item figure img {
     max-width: 100px;
     max-height: initial;
-    height: 115px;
+    height: 140px;
     border-radius: 20px 0 0 20px;
 }
 
@@ -280,7 +288,6 @@ figure:hover {
 
 #hébergement h1 i {
     margin: auto 0;
-    
 }
 .LesPlusPopulaires .étoilesnote {
     position: absolute;
@@ -296,25 +303,27 @@ figure:hover {
 .txtActivite {
     padding: 0px 0px 0px 20px;
 }
-
 .activiteContainer .fondgris h1 {
-    margin-left: 25px;
+    margin-left: 50px;
+    
 }
+
 
 .activiteContainer .flex-container {
     list-style: none;
     display: flex;
     flex-flow: row wrap;
-    padding: 15px 15px;
+    padding: 20px 15px;
 }
 
 #ActiviteAMarseille {
     width: 70%;
     margin-right: 25px;
+    
 }
 
 #ActiviteAMarseille .fondgris {
-    width: 35%;
+    width: 60%;
 }
 
 #ActiviteAMarseille {
@@ -359,21 +368,23 @@ figure:hover {
     #activites .group-item .column,
     #activites .group-item .column .item {
         height: 100%;
+        
     }
     #activites .group-item .column .item .activiteimg,
     #activites .group-item .column .item .activiteimg img {
-        height: 80%;
+        width: 100%;
         max-height: initial;
-        height: 92%;
+        height: 90%;
         margin-bottom: -9%;
+        
     }
-}
 
 #activites .group-item .column {
     display: flex;
     flex-direction: column;
     order: 1;
     flex: 1;
+   
 }
 
 #activites .group-item .columndouble {
@@ -393,6 +404,7 @@ figure:hover {
     box-shadow: 0 5px 40px -20px rgba(0, 0, 0, .75);
     cursor: pointer;
     transition: transform .2s;
+   
 }
 
 #activites .group-item .item:hover {
@@ -405,6 +417,7 @@ figure:hover {
     width: 100%;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
+   
 }
 
 
@@ -426,18 +439,26 @@ footer {
     width: 100%;
     padding-left: 10%;
 }
-
 ul.liste {
-    color: #464646;
     padding: 0;
-    line-height: 2rem;
+    justify-content: left;
 }
 
-#footer .bloc-footer .liste {
+
+ul.liste li {
+    
+    padding: 0;
     flex-shrink: 1;
+    line-height: 2rem;
     list-style: none;
+    justify-content: left ;
+    margin-bottom: 0%;
+    
 }
 
-#footer a li {
+
+
+ul.liste li a  {
     text-decoration: none;
     color: black;
+    justify-content: left;
