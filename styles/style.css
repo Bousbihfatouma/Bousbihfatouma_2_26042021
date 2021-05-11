@@ -3,19 +3,20 @@
   src: url("../fonts/font-awesome/Raleway-Regular.ttf") format("truetype");
 }
 
-
 body {
   font-family: "Raleway", sans-serif;
   padding: 0 32px;
   margin: 0;
 }
-
 #nav {
   margin: 10px;
+
   padding: 20px;
 }
+
 #nav li {
   display: inline;
+
   padding: 0;
 
   margin: 0;
@@ -30,19 +31,27 @@ header {
 header nav {
   align-self: center;
 }
+
 header a {
   text-decoration: none;
+
   padding: 28px;
+
   color: black;
 }
+
 header a:hover {
   color: #0065fc;
+
   border-top: 2px solid #0065fc;
 }
+
 #register {
   color: #0065fc;
+
   font-weight: bold;
 }
+
 #register:hover {
   border: none;
 
