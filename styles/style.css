@@ -17,10 +17,13 @@ body {
 #nav li {
   display: inline;
   padding: 0;
+
   margin: 0;
 }
+
 header {
   display: flex;
+
   justify-content: space-between;
 }
 
@@ -42,8 +45,10 @@ header a:hover {
 }
 #register:hover {
   border: none;
+
   text-decoration: underline;
 }
+
 #nav {
   display: flex;
 }
@@ -86,6 +91,7 @@ form.recherche input {
   align-items: center;
   display: flex;
 }
+
 .titre-filtre {
   padding-top: inherit;
   padding-right: 20px;
@@ -433,12 +439,4 @@ ul.liste li a {
 .margin-right-0 {
   margin-right: 0 !important;
 }
-/* MEDIA QUERIES */
-@media (max-width: 694px) {
-  .containerheader{
-    padding-right: 0px;
-    padding-left: 0px;
-  }
-}
-
 

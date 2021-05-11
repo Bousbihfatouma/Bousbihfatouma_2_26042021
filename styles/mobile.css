@@ -1,0 +1,97 @@
+#nav {
+  margin: 15px;
+  padding: 0px;
+}
+header {
+  flex-wrap: wrap;
+  padding-top: 2rem;
+}
+#logo {
+  text-align: left;
+  flex-grow: 1;
+}
+
+footer {
+  flex-flow: row wrap;
+}
+
+header nav {
+  flex-flow: row wrap;
+  order: 2;
+  justify-content: center;
+  display: flex;
+}
+
+header a {
+  padding-left: inherit;
+}
+
+#register :hover {
+  text-decoration: overline;
+}
+
+#register {
+  order: 1;
+  text-align: right;
+  padding: 0 1rem;
+  margin-top: 5px;
+}
+.titre-filtre {
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  margin-top: 0px;
+  order: 5;
+}
+.filtres-container {
+  align-items: baseline;
+  flex-flow: column wrap;
+}
+
+#hébergement.hébergementsproposés {
+  order: 1;
+  flex: 1;
+  margin-right: 0%;
+}
+#hébergement .hébergementsproposés .group-item {
+  flex-flow: column wrap;
+  align-items: baseline;
+}
+#hébergement .fondgris {
+  background: whitesmoke;
+  border-radius: 0px !important;
+  padding: 30px 25px;
+  min-height: 519px;
+  margin-bottom: 0px;
+}
+#hébergement .fondgris .group-item {
+  flex-direction: column;
+}
+#hébergement .LesPlusPopulaires {
+  order: 0;
+  flex: 0 1 100%;
+}
+#hébergement .fondgris .group-item figure {
+  transform: scale(1.05);
+  width: auto;
+  background: white;
+}
+.hébergementsproposés .fondgris {
+  background: white !important;
+  object-fit: cover;
+}
+#hébergement .fondgris {
+  flex-direction: column;
+}
+
+#activites .group-item {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0 2rem 1.6rem;
+  width: 79vw;
+  height: 50vw;
+  justify-content: center;
+  flex-flow: column wrap;
+  align-items: baseline;
+}
