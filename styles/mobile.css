@@ -94,4 +94,10 @@ header a {
   justify-content: center;
   flex-flow: column wrap;
   align-items: baseline;
+  justify-content: flex-start;
+  background: white;
+  border-radius: 0px !important;
+  padding: 30px 25px;
+  min-height: 519px;
+  margin-bottom: 0px;
 }
