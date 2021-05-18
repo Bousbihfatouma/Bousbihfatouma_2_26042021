@@ -99,10 +99,14 @@ form.recherche input {
   padding: 20px 0;
   align-items: center;
   display: flex;
+  flex-wrap: wrap;
+}
+.filtres-elements {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .titre-filtre {
-  padding-top: inherit;
   padding-right: 20px;
   font-weight: bold;
   font-size: large;
@@ -290,8 +294,18 @@ figure:hover {
   position: absolute;
   bottom: 5%;
 }
+.popular-img {
+  width: 50%;
+}
+.group-item img {
+  width: 100%;
+}
+.group-item figcaption {
+  width: 50%;
+}
 
-* Activités à Marseille */ .txtActiviteVille {
+/* Activités à Marseille */
+.txtActiviteVille {
   padding: 0px 0px 0px 20px;
 }
 
@@ -448,4 +462,3 @@ ul.liste li a {
 .margin-right-0 {
   margin-right: 0 !important;
 }
-

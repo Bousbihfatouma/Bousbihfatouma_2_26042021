@@ -41,13 +41,19 @@ header a {
   flex-direction: column;
   margin: 0px;
   margin-top: 0px;
-  order: 5;
+}
+.bouton-filtre {
+  margin-top: 16px;
 }
 .filtres-container {
   align-items: baseline;
   flex-flow: column wrap;
 }
 
+.hébergements.container {
+  display: flex;
+  flex-flow: column-reverse wrap;
+}
 #hébergement.hébergementsproposés {
   order: 1;
   flex: 1;
@@ -67,10 +73,6 @@ header a {
 #hébergement .fondgris .group-item {
   flex-direction: column;
 }
-#hébergement .LesPlusPopulaires {
-  order: 0;
-  flex: 0 1 100%;
-}
 #hébergement .fondgris .group-item figure {
   transform: scale(1.05);
   width: auto;
@@ -82,22 +84,4 @@ header a {
 }
 #hébergement .fondgris {
   flex-direction: column;
-}
-
-#activites .group-item {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  margin: 2rem 0 2rem 1.6rem;
-  width: 79vw;
-  height: 50vw;
-  justify-content: center;
-  flex-flow: column wrap;
-  align-items: baseline;
-  justify-content: flex-start;
-  background: white;
-  border-radius: 0px !important;
-  padding: 30px 25px;
-  min-height: 519px;
-  margin-bottom: 0px;
 }

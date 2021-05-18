@@ -1,0 +1,11 @@
+.bouton-filtre,
+.titre-filtre {
+  margin-top: 16px;
+}
+.filtres-container {
+  padding: 4px 0 20px 0;
+}
+.hébergements.container {
+  display: flex;
+  flex-flow: column-reverse wrap;
+}
