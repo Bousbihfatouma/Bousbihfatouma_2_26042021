@@ -72,11 +72,13 @@ header a {
 }
 #hébergement .fondgris .group-item {
   flex-direction: column;
+  padding: 1rem;
 }
 #hébergement .fondgris .group-item figure {
   transform: scale(1.05);
   width: auto;
   background: white;
+  width: 100%;
 }
 .hébergementsproposés .fondgris {
   background: white !important;
@@ -84,4 +86,27 @@ header a {
 }
 #hébergement .fondgris {
   flex-direction: column;
+}
+
+#activites .group-item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+#activites .group-item .columndouble .column {
+  min-width: 45%;
+  max-width: 45%;
+}
+#activites .group-item .column {
+  width: 100%;
+}
+#activites .group-item .columndouble,
+#activites .group-item .column {
+  max-width: none;
+}
+#activites .group-item .item {
+  height: 155px;
+}
+#activites .group-item .column .item {
+  height: 155px;
 }

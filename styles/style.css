@@ -176,6 +176,7 @@ h2 {
 .header-popular {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .header-popular .stonk {
   font-size: 24px;
@@ -221,14 +222,14 @@ figure:hover {
 }
 
 #hébergement .fondgris .group-item figure {
-  width: calc(100% / 3.3);
-  background: #fff;
   padding: 0.3rem;
   border-radius: 1.25rem;
   margin: 0 0 30px 0;
   box-shadow: 0px 0px 10px #55555535;
   cursor: pointer;
   transition: transform 0.2s;
+  width: calc(100% / 3.3);
+  background: white;
 }
 
 #hébergement .fondgris .group-item figure figcaption {
@@ -257,10 +258,10 @@ figure:hover {
 #hébergement .fondgris .group-item figure img {
   height: 7rem;
   object-fit: cover;
-  max-width: 100%;
   width: 100%;
-  max-height: 100%;
   border-radius: 1rem 1rem 0 0;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 #hébergement .LesPlusPopulaires .group-item {
@@ -274,11 +275,11 @@ figure:hover {
 }
 
 #hébergement .LesPlusPopulaires .group-item figure img {
-  max-width: 250px;
-  max-height: initial;
   height: 140px;
+  max-width: 250px;
   border-radius: 20px 0 0 20px;
   object-fit: cover;
+  max-height: initial;
 }
 
 #hébergement h2,
@@ -297,9 +298,7 @@ figure:hover {
 .popular-img {
   width: 50%;
 }
-.group-item img {
-  width: 100%;
-}
+
 .group-item figcaption {
   width: 50%;
 }
@@ -361,9 +360,10 @@ figure:hover {
 }
 
 #activites .group-item {
-  width: 50%;
   display: flex;
+  width: 50%;
 }
+
 #activites .group-item .columndouble,
 #activites .group-item .column {
   max-width: 45%;
