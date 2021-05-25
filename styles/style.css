@@ -21,17 +21,15 @@ body {
 
   margin: 0;
 }
-
-header {
+nav {
   display: flex;
-
   justify-content: space-between;
-}
-
-header nav {
   align-self: center;
 }
-
+#nav-mobile {
+  display: flex;
+  align-items: center;
+}
 header a {
   text-decoration: none;
 
@@ -45,29 +43,31 @@ header a:hover {
 
   border-top: 2px solid #0065fc;
 }
-
-#register {
+#register-mobile {
+  display: none;
+}
+#register,
+#register-mobile {
   color: #0065fc;
-
   font-weight: bold;
 }
 
-#register:hover {
+#register:hover,
+#register-mobile:hover {
   border: none;
-
   text-decoration: underline;
 }
 
 #nav {
   display: flex;
 }
-
+/*la barre de recherche*/
 form.recherche .btnLocalization {
   background: gainsboro;
   padding-bottom: 10px;
   padding-top: 7px;
   border-radius: 15px 0 0 15px;
-  font-size: 20px;
+  font-size: 18px;
   padding: 5px 15px;
   border: 1px gainsboro solid;
 }
@@ -78,13 +78,13 @@ form.recherche button[type="submit"] {
   border: 1px #0065fc solid;
   background: #0065fc;
   display: flex;
-  height: 43px;
-  padding: 0px 15px;
+  padding: 0px 16px;
+  height: 44px;
 }
 
 form.recherche {
-  display: flex;
   text-align: initial;
+  display: flex;
 }
 
 form.recherche input {
@@ -94,6 +94,7 @@ form.recherche input {
   border: 1px gainsboro solid;
   margin-left: -4px;
 }
+/*les filtres*/
 
 .filtres-container {
   padding: 20px 0;
@@ -116,31 +117,31 @@ form.recherche input {
 .filtres .bouton-filtre {
   display: flex;
   justify-content: space-between;
-  border-radius: 200px;
-  border: 2px #f2f2f2 solid;
-  height: 50px;
   position: relative;
   padding-left: 55px;
   padding-right: 14px;
   margin-right: 20px;
   transition: transform 0.2s;
+  border-radius: 200px;
+  height: 50px;
   cursor: pointer;
+  border: 2px #f2f2f2 solid;
 }
 
 .filtres .bouton-filtre i {
-  line-height: 50px;
-  color: #0065fc;
   position: absolute;
   width: 50px;
   text-align: center;
   background: #deebff;
   left: -2px;
+  line-height: 50px;
+  color: #0065fc;
   border-radius: 100%;
 }
 
 .bouton-filtre p {
-  margin: auto;
   font-weight: bold;
+  margin: auto;
 }
 
 .nombrelogementsdispo {
@@ -149,23 +150,23 @@ form.recherche input {
 }
 
 .nombrelogementsdispo i {
+  border-radius: 100%;
+  margin-right: 5px;
+  display: flex;
   border: 2px solid #f2f2f2;
   width: 29px;
+  justify-content: center;
+  align-items: center;
+  height: 29px;
   line-height: 25px;
   font-size: 14px;
   color: #0065fc;
   text-align: center;
-  border-radius: 100%;
-  margin-right: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 29px;
 }
 
 p.NbLogements {
-  margin: auto;
   padding-left: 3px;
+  margin: auto;
 }
 
 /* hebergemennts */
@@ -173,12 +174,12 @@ p.NbLogements {
 h2 {
   font-size: 24px;
 }
-.header-popular {
+.header-populaires {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.header-popular .stonk {
+.header-populaires .graph {
   font-size: 24px;
 }
 
@@ -196,9 +197,9 @@ figure:hover {
 }
 
 #hébergement .hébergementsproposés {
+  margin-right: 4%;
   order: 1;
   flex: 1;
-  margin-right: 4%;
 }
 
 #hébergement .LesPlusPopulaires {
@@ -207,29 +208,29 @@ figure:hover {
 }
 
 #hébergement .fondgris {
+  padding: 30px 25px;
   background: #f2f2f2;
   border-radius: 20px;
-  padding: 30px 25px;
   min-height: 607px;
   margin-bottom: 20px;
 }
 
 #hébergement .fondgris .group-item {
   display: flex;
+  border-radius: 20px;
   flex-wrap: wrap;
   justify-content: space-between;
-  border-radius: 20px;
 }
 
 #hébergement .fondgris .group-item figure {
   padding: 0.3rem;
   border-radius: 1.25rem;
-  margin: 0 0 30px 0;
-  box-shadow: 0px 0px 10px #55555535;
   cursor: pointer;
   transition: transform 0.2s;
   width: calc(100% / 3.3);
   background: white;
+  margin: 0 0 30px 0;
+  box-shadow: 0px 0px 10px #55555535;
 }
 
 #hébergement .fondgris .group-item figure figcaption {
@@ -257,10 +258,10 @@ figure:hover {
 
 #hébergement .fondgris .group-item figure img {
   height: 7rem;
-  object-fit: cover;
   width: 100%;
   border-radius: 1rem 1rem 0 0;
   max-width: 100%;
+  object-fit: cover;
   max-height: 100%;
 }
 
@@ -269,9 +270,9 @@ figure:hover {
 }
 
 #hébergement .LesPlusPopulaires .group-item figure {
-  width: auto;
   display: flex;
   flex-direction: row;
+  width: auto;
 }
 
 #hébergement .LesPlusPopulaires .group-item figure img {
@@ -283,7 +284,7 @@ figure:hover {
 }
 
 #hébergement h2,
-#hébergement .stonk {
+#hébergement .graph {
   display: flex;
   justify-content: space-between;
 }
@@ -295,7 +296,7 @@ figure:hover {
   position: absolute;
   bottom: 5%;
 }
-.popular-img {
+.populaire-img {
   width: 50%;
 }
 
@@ -401,11 +402,11 @@ figure:hover {
   background: #fff;
   border-radius: 20px;
   margin: 0 0 30px 0;
+  cursor: pointer;
+  transition: transform 0.2s;
   -webkit-box-shadow: 0 5px 40px -20px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0 5px 40px -20px rgba(0, 0, 0, 0.75);
   box-shadow: 0 5px 40px -20px rgba(0, 0, 0, 0.75);
-  cursor: pointer;
-  transition: transform 0.2s;
 }
 
 #activites .group-item .item:hover {
@@ -413,28 +414,28 @@ figure:hover {
 }
 
 #activites .group-item .item img {
-  height: 100%;
-  max-height: 100px;
   width: 100%;
   object-fit: cover;
   border-radius: 20px 20px 0 0;
+  height: 100%;
+  max-height: 100px;
 }
 
 /* footer */
 
 footer {
-  background-color: #f2f2f2;
-  bottom: 0;
-  border-top: 0;
   position: inherit;
   justify-content: space-around;
   display: flex;
+  background-color: #f2f2f2;
+  bottom: 0;
+  border-top: 0;
 }
 
-.bloc-footer {
+.tableau-footer {
+  padding-left: 10%;
   padding: 20px;
   width: 100%;
-  padding-left: 10%;
 }
 ul.liste {
   padding: 0;
@@ -442,18 +443,18 @@ ul.liste {
 }
 
 ul.liste li {
-  padding: 0;
-  flex-shrink: 1;
   line-height: 2rem;
   list-style: none;
   justify-content: left;
+  padding: 0;
+  flex-shrink: 1;
   margin-bottom: 0%;
 }
 
 ul.liste li a {
+  justify-content: left;
   text-decoration: none;
   color: black;
-  justify-content: left;
 }
 
 .margin-left-0 {

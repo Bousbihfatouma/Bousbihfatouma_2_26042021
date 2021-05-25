@@ -36,6 +36,7 @@ header a {
   padding: 0 1rem;
   margin-top: 5px;
 }
+
 .titre-filtre {
   display: flex;
   flex-direction: column;
@@ -109,4 +110,25 @@ header a {
 }
 #activites .group-item .column .item {
   height: 155px;
+}
+#register-mobile {
+  display: block;
+}
+#register {
+  display: none !important;
+}
+header nav {
+  flex-flow: column wrap;
+  order: 2;
+  justify-content: center;
+  display: flex;
+}
+.nav-activites {
+  width: 50%;
+}
+.nav-hébergements {
+  width: 50%;
+}
+#nav {
+  text-align: center;
 }

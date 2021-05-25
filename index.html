@@ -4,19 +4,21 @@
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Reservia openclassroom </title>
-    
+    </head>
         <link rel="stylesheet" href="styles/style.css"/>
         <link rel="stylesheet" href="styles/font-awesome.css"/>
         <link rel="stylesheet" href="./styles/tablet.css" media="screen and (max-width: 1024px)"/>
         <link rel="stylesheet" href="./styles/mobile.css" media="screen and (max-width: 768px)"/>
-    </head>
+   
 
                                                                                                                                                                                                                </head>
                                 <!--Header-->
     <header>
-       <img src="images/Reservia@3x.png"  width="100px">
-        
         <nav class="menu">
+            <div id="nav-mobile">
+                <img src="images/Reservia@3x.png"  width="100px">
+                <div id="register-mobile" href="#">S'inscrire</li>
+            </div>
             <ul id="nav">
                 <li class="nav-hébergement"><a href="#">Hébergements</a></li>
                 <li class="nav-activités"><a href="#">Activités</a></li>
@@ -29,7 +31,7 @@
     <section class="recherche">                                    
         <h1>Trouvez votre hébergement pour des vacances de rêve </h1>
         <p>En pleins centre ville ou en pleine nature</p>
-        <div class="formsearch">
+        <div class="formrecherche">
             <form class="recherche" action=" résultat de la recherche">
                   <button class="btnLocalization"> <i class="fas fa-map-marker-alt"></i></button>
                   <input type="text" name="recherche" placeholder="Tapez votre destination" value="Marseille,France">
@@ -166,13 +168,13 @@
                                         <!--  Les plus populaires Aside -->
             <div class= "LesPlusPopulaires">
                 <div class="fondgris">
-                    <div class="header-popular">
+                    <div class="header-populaires">
                         <h2>Les plus populaires</h2>
-                        <div class="stonk"><i class="fas fa-chart-line"></i></div>
+                        <div class="graph"><i class="fas fa-chart-line"></i></div>
                     </div>
                     <div class="group-item">
                         <figure>
-                            <div class="popular-img">
+                            <div class="populaire-img">
                                  <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="hôtel le soleil du matin">
                             </div>
                             <figcaption>
@@ -188,7 +190,7 @@
                             </figcaption>
                         </figure>
                         <figure>
-                            <div class="popular-img">
+                            <div class="populaire-img">
                                  <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau chambre d'hôtes">
                             </div>
                             <figcaption>
@@ -204,7 +206,7 @@
                             </figcaption>
                         </figure>
                         <figure>
-                           <div class= "popular-img">
+                           <div class= "populaire-img">
                                 <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="hôtel tout bleu et blanc">
                             </div>
                         <figcaption>
@@ -231,7 +233,7 @@
                     <h1>Activités à Marseille</h1>
                     <ul class="flex-container">
                         <div class="group-item">
-                            <div class="column ">
+                            <div class="column">
                                 <div class="item">
                                     <div class="activiteimg">
                                         <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" " alt=" le vieux port">
@@ -241,7 +243,7 @@
                                     </div>
                                 </div>
                             </div>
-                           <div class="columndouble">
+                           <div class="columndouble ">
                                 <div class="item">
                                 <div class="activiteimg">
                                     <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt=" le fort de Pomègue">
@@ -294,7 +296,7 @@
 </main>
                                                             <!-- Zone du footer -->
          <footer>
-            <div class="bloc-footer">
+            <div class="tableau-footer">
                   <h3>A propos</h3>
                    <ul class="liste">
                         <li><a href="#">Fonctionnement du site</a></li>
@@ -302,14 +304,14 @@
                         <li><a href="#">Données et confidentialité</a></li>
                      </ul>
             </div>
-           <div class="bloc-footer">
+           <div class="tableau-footer">
                   <h3>Nos hébergements</h3>
                        <ul class="liste">
                            <li><a href="#">Charte qualité</a></li>
                            <li><a href="#">Soumettre votre hôtel</a></li>
                         </ul>
            </div>
-          <div class="bloc-footer">
+          <div class="tableau-footer">
                 <h3>Assistance</h3>
                 <ul class="liste">
               <li><a href="#">Centre d'aide</a></li>

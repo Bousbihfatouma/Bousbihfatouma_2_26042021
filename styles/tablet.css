@@ -9,3 +9,8 @@
   display: flex;
   flex-flow: column-reverse wrap;
 }
+#hébergement .hébergementsproposés {
+  order: 1;
+  flex: 1;
+  margin-right: 0%;
+}
