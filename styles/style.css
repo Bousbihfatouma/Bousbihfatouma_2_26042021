@@ -5,20 +5,17 @@
 
 body {
   font-family: "Raleway", sans-serif;
+  margin: 0px;
   padding: 0 32px;
-  margin: 0;
 }
 #nav {
   margin: 10px;
-
   padding: 20px;
 }
 
 #nav li {
   display: inline;
-
   padding: 0;
-
   margin: 0;
 }
 nav {
@@ -32,9 +29,7 @@ nav {
 }
 header a {
   text-decoration: none;
-
   padding: 28px;
-
   color: black;
 }
 
@@ -57,7 +52,10 @@ header a:hover {
   border: none;
   text-decoration: underline;
 }
-
+.register {
+  color: #0065fc;
+  font-size: bold;
+}
 #nav {
   display: flex;
 }
@@ -94,6 +92,12 @@ form.recherche input {
   border: 1px gainsboro solid;
   margin-left: -4px;
 }
+form.recherche h1 {
+  margin: 15px 0 0 0;
+  display: flex;
+  flex-direction: column;
+}
+
 /*les filtres*/
 
 .filtres-container {
@@ -106,7 +110,10 @@ form.recherche input {
   display: flex;
   flex-wrap: wrap;
 }
-
+.bouton-filtre:hover {
+  background-color: blue;
+  transform: scale(1.015);
+}
 .titre-filtre {
   padding-right: 20px;
   font-weight: bold;

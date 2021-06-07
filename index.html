@@ -4,25 +4,25 @@
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Reservia openclassroom </title>
-    </head>
         <link rel="stylesheet" href="styles/style.css"/>
         <link rel="stylesheet" href="styles/font-awesome.css"/>
         <link rel="stylesheet" href="./styles/tablet.css" media="screen and (max-width: 1024px)"/>
         <link rel="stylesheet" href="./styles/mobile.css" media="screen and (max-width: 768px)"/>
-   
+    </head>
+        
 
-                                                                                                                                                                                                               </head>
+                                                                                                                                                                                                            
                                 <!--Header-->
     <header>
         <nav class="menu">
             <div id="nav-mobile">
-                <img src="images/Reservia@3x.png"  width="100px">
-                <div id="register-mobile" href="#">S'inscrire</li>
+                <img src="images/Reservia@3x.png" alt="logo"  width="100">
+                <div id="register-mobile" ><a href="#">S'inscrire</a></div>
             </div>
             <ul id="nav">
-                <li class="nav-hébergement"><a href="#">Hébergements</a></li>
-                <li class="nav-activités"><a href="#">Activités</a></li>
-                <li id="register" href="#">S'inscrire</li>
+                <li class="nav-hébergement"><a href="hébergement">Hébergements</a></li>
+                <li class="nav-activités"><a href="activités">Activités</a></li>
+                <li id="register"><a href="#">S'inscrire</a></li>
             </ul>
         </nav>
     </header>
@@ -32,10 +32,13 @@
         <h1>Trouvez votre hébergement pour des vacances de rêve </h1>
         <p>En pleins centre ville ou en pleine nature</p>
         <div class="formrecherche">
-            <form class="recherche" action=" résultat de la recherche">
+            <form class="recherche" action="#">
                   <button class="btnLocalization"> <i class="fas fa-map-marker-alt"></i></button>
                   <input type="text" name="recherche" placeholder="Tapez votre destination" value="Marseille,France">
-                  <button class="btnrecherche" type="submit"> <p class="textbtn">rechercher</p> </button>
+                    <button class="btnrecherche" type="submit"> 
+                         <p class="textbtn">rechercher</p> 
+                         <p class="textbtn2"><i class="fas fa-search"></i></p>
+                    </button>
             </form>
         </div>
     </section>
@@ -43,7 +46,7 @@
 
     <section class="filtres">
         <div class="filtres-container">
-            <div class="titre-filtre">Filtres</div>
+            <div class="titre-filtre"><h2>Filtres</h2></div>
             <div class="filtres-elements">
                 <div class= "bouton-filtre">
                         <i class="fas fa-money-bill-wave"></i>
@@ -67,8 +70,7 @@
              <i class="fas fa-info"></i> 
              <p class="NbLogements"> Plus de 500 logements sont disponibles dans cette ville</p>
         </div>
-        
-                            <!--Hébergement à Marseille -->
+    </section>                        <!--Hébergement à Marseille -->
             
     <main>                      
         <section class="hébergement" id ="hébergement">
@@ -231,19 +233,19 @@
             <div class="activiteContainer">
                 <div class="fondgris">
                     <h1>Activités à Marseille</h1>
-                    <ul class="flex-container">
+                    <div class="flex-container">
                         <div class="group-item">
                             <div class="column">
                                 <div class="item">
                                     <div class="activiteimg">
-                                        <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" " alt=" le vieux port">
+                                        <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt=" le vieux port">
                                     </div>
                                     <div class="txtActivite">
                                          <p><strong>Vieux Port</strong></p>
                                     </div>
                                 </div>
                             </div>
-                           <div class="columndouble ">
+                            <div class="columndouble ">
                                 <div class="item">
                                 <div class="activiteimg">
                                     <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt=" le fort de Pomègue">
@@ -259,8 +261,8 @@
                                     <p><strong>îles du Frioul</strong> </p>
                                 </div>
                             </div>
-                       </div>
-                  </div>
+                        </div>
+                    </div>
              </div>
              <div class="group-item">
                  <div class="column">
@@ -290,7 +292,7 @@
                              </div>
                        </div>
                   </div>
-              </ul>
+              </div>
         </div>
     </section>
 </main>
