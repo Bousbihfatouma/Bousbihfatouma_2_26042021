@@ -6,6 +6,8 @@
 body {
   font-family: "Raleway", sans-serif;
   margin: 0px;
+}
+.bloc_page {
   padding: 0 32px;
 }
 #nav {
@@ -54,7 +56,7 @@ header a:hover {
 }
 .register {
   color: #0065fc;
-  font-size: bold;
+  font-weight: bold;
 }
 #nav {
   display: flex;
@@ -469,4 +471,7 @@ ul.liste li a {
 }
 .margin-right-0 {
   margin-right: 0 !important;
+}
+p.textbtn2{
+  display: none;
 }
